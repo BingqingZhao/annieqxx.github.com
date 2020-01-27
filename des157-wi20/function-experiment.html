@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Experimentation</title>
+</head>
+<body>
+    <h1>Functional Experimentation</h1>
+    <p>Click to test your key word in 2020!</p>
+
+    <button onclick="keyWords(words)">Click!</button>
+
+    <p id="key"></p>
+    
+
+    <script>
+        var yourNum =prompt("Please enter your birthday, like(mmdd)","");
+        var words = ["GOOD JOB", "HAPPY", "RICH", "IN LOVE", "HEALTH", "LUCKY"];
+
+        if (parseInt(yourNum)){
+            console.log(`Hello! You birthday is ${yourNum}. `);  
+        } else {
+            console.log("You didn't give your birthday.");
+        }
+       
+
+        function randomInt(min,max){
+            return Math.floor((max-min+1)* Math.random())+min;
+        }
+
+
+        function keyWords(words){
+            var randomWords= words[randomInt(0,words.length-1)];
+            document.getElementById("key").innerHTML= randomWords;
+        }
+        
+    </script>
+
+</body>
+</html>
