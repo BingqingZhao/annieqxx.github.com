@@ -7,12 +7,6 @@
 </head>
 <body>
     <h1>Functional Experimentation</h1>
-    <p>Click to test your key word in 2020!</p>
-
-    <button onclick="keyWords(words)">Click!</button>
-
-    <p id="key"></p>
-    
 
     <script>
         var yourNum =prompt("Please enter your birthday, like(mmdd)","");
@@ -32,8 +26,10 @@
 
         function keyWords(words){
             var randomWords= words[randomInt(0,words.length-1)];
-            document.getElementById("key").innerHTML= randomWords;
+            console.log(`In 2020, your key word is ${randomWords}!`);
         }
+
+        keyWords(words);
         
     </script>
 
