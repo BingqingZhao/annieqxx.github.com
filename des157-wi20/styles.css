@@ -14,8 +14,10 @@ header{
 }
 
 #mySketch {
+    margin:auto;
     width: 800px;
     height: 250px;
+
 }
 
 h1{
