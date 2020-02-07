@@ -34,6 +34,15 @@ h1{
     padding-right: 50px;
 }
 
+h2{
+    color: #00535E;
+    font-size: 2em;
+}
+
+h3{
+    color: #00535E;
+}
+
  .design{
     /* padding-bottom: 20px; */
     display: block;
