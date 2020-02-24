@@ -57,15 +57,18 @@ function throwDice(){
 	// if two 1's are rolled...
 	if( gameData.rollSum === 2 ){
 		game.innerHTML += "<p>Oh snap! Snake eyes!</p>";
-		// gameData.score[gameData.index] = 0;
-		// gameData.index ? gameData.index = 0 : gameData.index = 1;
-		// showCurrentScore();
-		// setTimeout( setUpTurn,2000);
-		score.innerHTML = `<h2>${gameData.players[gameData.index]} 
-		wins with snake eyes!</h2>`;
-		actionArea.innerHTML = '';
-		document.getElementById('quit').innerHTML = "Start a New Game?";
+		gameData.score[gameData.index] = 0;
+		gameData.index ? gameData.index = 0 : gameData.index = 1;
+		showCurrentScore();
+		setTimeout( setUpTurn,2000);
 	}
+	// if two 6's are rolled...
+	else if( gameData.rollSum === 12 ){
+		game.innerHTML += "<p>Oh! Double Six</p>";
+		score.innerHTML = `<h2>${gameData.players[gameData.index]} 
+		wins with double six!</h2>`;
+		actionArea.innerHTML = '';
+		document.getElementById('quit').innerHTML = "Start a New Game?";}
 	// if either die is a 1...
 	else if(gameData.roll1 === 1 || gameData.roll2 === 1){
         gameData.index ? gameData.index = 0:gameData.index=1;
