@@ -1,0 +1,68 @@
+body {
+    background-color : #EAFDD9;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width:70%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size : 60px;
+    padding: 30px, 0px,30px,0px;
+    color : #2b4653;
+    font-family : 'Bungee Inline', sans-serif;
+    text-align : center;
+}
+
+p {
+    font-size: 1em;
+    color:#6a8d73;
+    line-height: 30px;
+}
+
+h2 {
+    font-size : 40px;
+    padding: 30px, 0px,30px,0px;
+    color : #2b4653;
+    font-family : 'Bungee Inline', sans-serif;
+    text-align : center;
+}
+
+#startgame, #roll, #quit {
+    margin:auto; 
+    font-size: 26px;
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color : #fff3b0;
+    border-radius: 10px;
+    text-align: center;
+    border-color: #fcca46;
+}
+
+#pass, #rollagain {
+    margin:auto; 
+    font-size: 26px;
+    display:block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color : #fff3b0;
+    border-radius: 10px;
+    text-align: center;
+    border-color: #fcca46; 
+}
+
+a{  
+    color: #2b4653;
+    text-decoration:none;
+  }
+  
+a:hover{
+    text-decoration: line-through;
+  }
+
+footer{
+    color: #2b4653; 
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
