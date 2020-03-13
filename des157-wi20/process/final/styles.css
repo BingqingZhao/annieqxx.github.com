@@ -1,0 +1,276 @@
+body {
+	color : #2b4653;
+	font-family:Helvetica, sans-serif;
+	background-image: linear-gradient(#eafdd9, #6a8d73);
+}
+
+#slider-wrapper {
+	width: 1000px;
+	height: 540px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+header{
+	text-align: center;
+	font-family:'Bungee Inline', sans-serif;
+	font-size: 30px;
+}
+
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#slider-wrapper ul {
+	width: 6000px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: left 700ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#slider-wrapper ul li {
+	background-size: cover;
+	position: relative;
+	width: 1000px;
+	height: 450px;
+	float: left;
+}
+
+#slider-wrapper ul li:nth-child(1) {
+	background-image: url(images/li1.png);
+}
+#slider-wrapper ul li:nth-child(2) {
+	background-image: url(images/li2.png);
+}
+#slider-wrapper ul li:nth-child(3) {
+	background-image: url(images/li3.png);
+}
+#slider-wrapper ul li:nth-child(4) {
+	background-image: url(images/li4.png);
+}
+#slider-wrapper ul li:nth-child(5) {
+	background-image: url(images/li5.png);
+}
+#slider-wrapper ul li:nth-child(6) {
+	background-image: url(images/li5.png);
+}
+
+
+/* mouse hover interaction */
+.content {
+	position: absolute;
+    color: transparent; 
+	text-align: center;
+	width:1000px;
+	transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	bottom: 0;
+	position: absolute;
+}
+
+ul:hover .content{
+	color: #2b4653;
+	background-color:rgb(250, 250, 250, 0.8);
+	
+  }
+
+ /* page 5 */
+
+.page5 {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr;
+ }
+
+section {
+    flex-wrap : wrap;
+	justify-content : center;
+}
+
+#img1, #img2, #img3 {
+	padding-top: 35px;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+#box, #box2, #box3 {
+    display : none;
+    position : absolute;
+    background-color : #fff3b0;
+    top : 40%;
+    left : 50%;
+	transform : translate(-50%,-50%);
+    width : 60%;
+    height : 35%;
+    border-radius : 20px 20px 20px 20px;
+	opacity : 0.90;
+	margin-top : 5em;
+    padding :30px 40px 20px 40px;
+ }
+
+ #des1，#des2, #des3 {
+    color : #2b4653;
+    opacity : 0.80;
+}
+
+#close, #close2, #close3 {
+    position : absolute;
+    font-size : 2em;
+    font-weight : bold;
+    top : 10px;
+    right : 20px;
+    color : #2b4653;
+}
+
+
+/* page 6 */
+
+input {
+    display: block; 
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+h2{
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+.invisible { 
+    display: none;
+}
+
+.visible {
+    margin-left: 50px;
+	display: block;
+	font-size: 26px;
+}
+
+input[type=text] {
+	border: 4px solid #fcca46;
+	padding: 10px 10px 10px 10px;
+    border-radius: 5px; 
+	background-color: #fff3b0;
+	outline-color: #fff3b0;
+}
+
+input[type=submit] {
+    border: 4px solid #fcca46;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px; 
+	background-color: #fff3b0;;
+	color:#2b4653;
+	outline-color: #fff3b0;
+}
+
+
+/* button */
+#slider-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+#slider-controls button {
+	display: block;
+	background-color: #eafdd9;
+	padding: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	width: 230px;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: #2b4653;
+	border-width: 5px;
+	color: #2b4653;
+  	text-align: center;
+  	font-size: 28px;
+  	padding: 20px;
+  	transition: all 0.5s;
+	cursor: pointer;
+	margin-bottom: auto;
+	outline:none;
+}
+
+#next span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+#next span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+#next:hover span {
+	padding-right: 25px;
+  }
+  
+#next:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+  
+#prev span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+#prev span:before {
+	content: '\00AB';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: -20px;
+	transition: 0.5s;
+  }
+  
+#prev:hover span {
+	padding-left: 25px;
+  }
+  
+#prev:hover span:before {
+	opacity: 1;
+	left: 0;
+  }
+
+
+/* footer */
+
+a{  
+    color: #2b4653;
+    text-decoration:none;
+  }
+  
+a:hover{
+    text-decoration: line-through;
+  }
+
+footer{
+    color: #2b4653; 
+	padding: 20px 0px 0px 0px;
+	font-family:'Bungee Inline', sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
