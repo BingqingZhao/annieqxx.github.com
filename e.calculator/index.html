@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Environmental Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Environmental Impact Calculator for Digital Fabrication</h1>
+        <a><img src="images/header.jpg" alt="Header"class="home"></a>
+        
+    </header>
+
+    <main>
+        <div class="sq">
+            <h2>About</h2>
+            <p>CALCULATE the environmental impacts of your prototype
+                <br />
+                COMPARE the impacts of different prototyping materials
+                <br /> 
+                REDUCE your environmental impacts</p>
+            <p>Contact:<a href="mailto:&#101;&#115;&#108;&#097;&#122;&#097;&#114;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#101;&#115;&#108;&#097;&#122;&#097;&#114;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;
+            </a></p>
+            <p>Note: The aim of this project is to encourage sustainable making</p>
+            <!-- <p>Please Sign up by submitting your Name below (your email will automatically be submitted).</p> -->
+        </div>
+
+        <div class="q">
+            <label id="firstname-label" for="Name">First name *</label>
+            <br />
+            <input autofocus type="text" id="firstname" class="input-field" placeholder="Enter your First name" name="firstname" required>
+            <br />
+            <br />
+            <label id="lastname-label" for="Name">Last name *</label>
+            <br />
+            <input autofocus type="text" id="lastname" class="input-field" placeholder="Enter your Last name" name="lastname" required>
+
+        </div>
+
+        <div class="q">
+            <p class="q1">Choose your digital fabrication technique *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Laser Cutting</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp 3D Printing</label>
+        </div>
+
+        <div class="sq">
+            <h2>3D Printing</h2>
+            <label for="opt"> Choose your model *</label> &nbsp
+            <br />
+            <br />
+            <select id="dropdown" class="dropdown"  name="opt">
+            <option disabled value="Select an option" >Select an option</option>
+            <option>--</option>
+            <option value="female">MakerBot Replicator+</option>
+            <option value="male">Ultimaker 2 Extended</option>
+            </select>
+        </div>
+
+        <div class="q">
+            <label for="opt"> Choose your prototyping material *</label> 
+            <br />
+            <br />
+            <select id="dropdown" class="dropdown"  name="opt">
+            <option disabled value="Select an option" >Select an option</option>
+            <option>--</option>
+            <option value="female">PLA</option>
+            <option value="male">ABS</option>
+            </select>
+        </div>
+
+        <div class="q">
+            <label id="weight_3dprint_label" for="weight_3dprint">Weight (gr) *</label>
+            <br />
+            <br />
+            <input type="text" id="weight_3dprint_input" class="input-field" placeholder="Your ans..." required>
+        </div>
+
+        <div class="q">
+            <label id="support_3dprint_label" for="support_3dprint">Support material (%) *</label>
+            <br />
+            <br />
+            <input type="text" id="support_3dprint_input" class="input-field" placeholder="Your ans..." required>
+        </div>
+
+        <div class="q">
+            <label id="name-label" for="Name">Printing time (min) * <br /> i.e 14.5 instead of 14,5</label>
+            <br />
+            <br />
+            <input autofocus type="text" id="name" class="input-field" placeholder="Your ans..." name="name" required>
+        </div>
+
+        <div class="q">
+            <label id="name-label" for="Name"># Iteration (ie.1,2,3,...) *</label>
+            <br />
+            <br />
+            <input autofocus type="text" id="name" class="input-field" placeholder="Your ans..." name="name" required>
+        </div>
+
+        <div class="sq">
+            <h2>Transportation</h2>
+            <p class="q1">Where was your material manufactured? *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Local</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp National</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp International</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
+            </select>
+        </div>
+
+        <div class="q">
+            <p class="q1">Which method of shipment did you use? *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp By air</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp By sea</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp By road</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
+            </select>
+        </div>
+
+        <div class="sq">
+            <h2>End of life</h2>
+            <p class="q1">Do you know if the disposed material go to? *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Recycling facility</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp Incineration facility</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp Landfill</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp Compost facility</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
+            </select>
+        </div>
+
+        <div class="button">
+        <button id="sumbit_button" type="next" onclick="PLA_material()"> Submit</button>
+        </div>
+        
+    </main>
+    
+    <!-- <footer>
+        <p><a href="https://validator.w3.org/">Valid HTML</a></p>
+        <p><a href="https://jigsaw.w3.org/css-validator/">Valid CSS</a></p>
+    </footer> -->
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
