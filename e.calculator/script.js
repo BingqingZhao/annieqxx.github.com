@@ -5,39 +5,20 @@
         const print = document.getElementById("3D_Printing");
         const Cutting = document.getElementById("Cutting");
         const cut = document.getElementById("Laser_Cutting");
+        const chart = document.getElementById("chart");
 
         Printing.addEventListener("click", function(){
             print.setAttribute('class', 'visible');
             cut.setAttribute('class', 'invisible');
+            chart.setAttribute('class', 'visible');
         });
 
         Cutting.addEventListener("click", function(){
             print.setAttribute('class', 'invisible');
             cut.setAttribute('class', 'visible');
+            chart.setAttribute('class', 'visible');
         });
 
-
-
-        // function hola(x) {
-        //     if(x == 0) {
-        //         document.getElementById("3D_Printing").style.visibility="hidden";
-        //         document.getElementById("Laser_Cutting").style.visibility="hidden";
-        //         }
-
-        //     if(x == 1) {
-        //         alert(support_3dprint);
-        //         document.getElementById("3D_Printing").setAttribute('class', 'visible');
-        //         document.getElementById("Laser_Cutting").setAttribute('class', 'invisible');
-        //         // document.getElementById("3D_Printing").style.visibility="visible";
-        //         // document.getElementById("Laser_Cutting").style.visibility="hidden"; 
-        //         }
-
-        //     if(x == 2)  {
-        //         document.getElementById("3D_Printing").style.visibility="hidden";
-        //         document.getElementById("Laser_Cutting").style.visibility="visible"; 
-        //     }
-        // }
-        // hola();
 
     // function material_calculation(){
     //     const weight_3dprint = parseFloat(document.getElementById("weight_3dprint_input").value)/1000;
