@@ -72,3 +72,12 @@ button:hover{
     text-decoration: underline;
     background: rgba(144, 208, 52, 0.5); 
   }
+
+
+.visible {
+    display: block;
+}
+
+.invisible { 
+    display: none;
+}
