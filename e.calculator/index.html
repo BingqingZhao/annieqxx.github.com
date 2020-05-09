@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Environmental Impact Calculator for Digital Fabrication</h1>
-        <a><img src="images/header.JPG" alt="Header"class="home"></a>
+        <a><img src="images/header.jpg" alt="Header"class="home"></a>
         
     </header>
 
@@ -43,13 +43,14 @@
 
         <div class="q">
             <p class="q1">Choose your digital fabrication technique *</p>
-            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Laser Cutting</label>
+            <label class="radio_button" id="Cutting"><input type="radio" value="change" name="change">&nbsp Laser Cutting</label>
             <br />
             <br />
-            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp 3D Printing</label>
+            <label class="radio_button" id="Printing"><Input type="radio" value="change" name="change">&nbsp 3D Printing</label>
         </div>
 
-        <div class="sq">
+    <article id="3D_Printing" class="invisible">
+        <div  class="sq">
             <h2>3D Printing</h2>
             <label for="opt"> Choose your model *</label> &nbsp
             <br />
@@ -151,10 +152,16 @@
             <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
             </select>
         </div>
+    </article>
 
-        <div class="button">
+
+        <article id="Laser_Cutting" class="invisible">
+            <p>Laser Cutting</p>
+        </article>
+
+        <!-- <div class="button">
         <button id="sumbit_button" type="next" onclick="PLA_material()"> Submit</button>
-        </div>
+        </div> -->
         
     </main>
     
