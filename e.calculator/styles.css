@@ -34,14 +34,6 @@ h2{
 }
 
 
-.begin{
-    border-radius: 10px;
-    margin: auto;
-    background-color: #e9eff8;
-    padding: 20px;
-    margin-top: 20px; 
-}
-
 .Intro{
     border-top: solid;
     border-color: #3b4456;
@@ -53,6 +45,7 @@ h2{
     padding-right: 20px;
     padding-bottom: 20px;
     margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 
@@ -70,19 +63,75 @@ h2{
 }
 
 
-/* .button {
+.button {
     margin: auto;
-    margin-top: 20px; 
+    margin-top: 30px; 
 }
 
 button{
     padding: 10px 20px;
-    border: 2px solid #3b4456;
-    background: rgba(103, 107, 98, 0.1); 
-    border-radius: 10px;
+    border: none;
+    font-weight:bold;
+    background: #e9eff8; 
+    border-radius: 5px;
 }
 
 button:hover{
     text-decoration: underline;
-    background: rgba(144, 208, 52, 0.5); 
-  } */
+  }
+
+a{  
+    color: #b4b8c5;
+    text-decoration:underline
+  }
+  
+a:hover{
+    text-decoration: line-through;
+  }
+
+
+#next{
+    padding: 10px 20px;
+    border: 2px solid #3b4456;
+    background: #e9eff8; 
+    border-radius: 5px;
+}
+
+.next:hover{
+    text-decoration: underline;
+  }
+
+p1{
+    color: #b4b8c5;
+}
+
+nav{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  
+nav ul li {
+    width: 25%;
+    line-height:40px;
+    height: 46px;
+    background:#e9eff8;
+	border-top:5px solid #3b4456;
+	height:40px;
+	text-align:center;
+    border-radius:5px ;
+  }
+  
+  

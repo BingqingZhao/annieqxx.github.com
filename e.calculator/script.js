@@ -7,17 +7,65 @@
         const cut = document.getElementById("Laser_Cutting");
         const chart = document.getElementById("chart");
 
+        // const manu = document.getElementById("manu");
+        // const trans = document.getElementById("trans");
+        // const use = document.getElementById("use");
+        // const end = document.getElementById("end");
+
+        // const Manu = document.getElementsById("Manufacturing");
+        // const Trans = document.getElementsById("Transportation");
+        // const Use = document.getElementsById("Use phase");
+        // const End = document.getElementsById("End");
+
         Printing.addEventListener("click", function(){
             print.setAttribute('class', 'visible');
             cut.setAttribute('class', 'invisible');
             chart.setAttribute('class', 'visible');
+
+            // Manu.setAttribute('class', 'visible');
+            // Trans.setAttribute('class', 'invisible');
+            // Use.setAttribute('class', 'invisible');
+            // End.setAttribute('class', 'invisible');
         });
 
         Cutting.addEventListener("click", function(){
             print.setAttribute('class', 'invisible');
             cut.setAttribute('class', 'visible');
             chart.setAttribute('class', 'visible');
+            
+            // Manu.setAttribute('class', 'visible');
+            // Trans.setAttribute('class', 'invisible');
+            // Use.setAttribute('class', 'invisible');
+            // End.setAttribute('class', 'invisible');
         });
+
+        // manu.addEventListener("click", function(){
+        //     Manu.setAttribute('class', 'visible');
+        //     Trans.setAttribute('class', 'invisible');
+        //     Use.setAttribute('class', 'invisible');
+        //     End.setAttribute('class', 'invisible');
+        // });
+
+        // trans.addEventListener("click", function(){
+        //     Manu.setAttribute('class', 'invisible');
+        //     Trans.setAttribute('class', 'visible');
+        //     Use.setAttribute('class', 'invisible');
+        //     End.setAttribute('class', 'invisible');
+        // });
+
+        // use.addEventListener("click", function(){
+        //     Manu.setAttribute('class', 'invisible');
+        //     Trans.setAttribute('class', 'invisible');
+        //     Use.setAttribute('class', 'visible');
+        //     End.setAttribute('class', 'invisible');
+        // });
+
+        // end.addEventListener("click", function(){
+        //     Manu.setAttribute('class', 'invisible');
+        //     Trans.setAttribute('class', 'invisible');
+        //     Use.setAttribute('class', 'invisible');
+        //     End.setAttribute('class', 'visible');
+        // });
 
 
     // function material_calculation(){
