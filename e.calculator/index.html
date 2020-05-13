@@ -116,9 +116,13 @@
                 <p><label id="weight_3dprint_label" for="weight_3dprint">Weight of your model (gr) * <br/>
                 <p1>i.e. review this info in your 3d printing software such as Cura, Simplify 3D, etc.</p1></label></p>
                 <p><input type="text" id="weight_3dprint_input" class="input-field" placeholder="Type a number"required>&nbsp(gr)</p>
-
+                
                 <p><label id="support_3dprint_label" for="support_3dprint">Support material (%) *</label></p>
-                <p><input type="text" id="support_3dprint_input" class="input-field" placeholder="Type a number" required>&nbsp%</p>
+                <p class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="Support_material">
+                    <p2 class="displayslider" id="Support_material_display">50</p2>
+                </p>
+                
 
                 <p><label id="time_label">Printing time (min) * <br />
                 <p1> i.e. 14.5 instead of 14,5</p1></label></p>
@@ -231,11 +235,17 @@
                 
                 <p><label id="waste_laser_label" for="waste_laser">Waste (%) *</label></p>
                 
-                <p><input type="text" id="waste_laser_input" class="input-field" placeholder="Type a number" required>&nbsp%</p>
+                <p class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="Waste_laser">
+                    <p2 class="displayslider" id="Waste_laser_display">50</p2>
+                </p>
 
-                <p><label id="Leftover_laser_label" for="Leftover_laser">Leftover (%) *</label></p>
+                <p><label id="Leftover_laser_label" for="leftover_laser">Leftover (%) *</label></p>
                 
-                <p><input type="text" id="Leftover_laser_input" class="input-field" placeholder="Type a number" required>&nbsp%</p>
+                <p class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="Leftover_laser">
+                    <p2 class="displayslider" id="Leftover_laser_display">50</p2>
+                </p>
 
                 <p><label id="time_label">Cutting time (min) * <br/>
                 <p1> i.e. 14.5 instead of 14,5</p1></label></p>

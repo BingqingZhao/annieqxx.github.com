@@ -67,6 +67,28 @@
         //     End.setAttribute('class', 'visible');
         // });
 
+        var SupportSlider = document.getElementById("Support_material");
+        var WasteSlider = document.getElementById("Waste_laser");
+        var LeftoverSlider = document.getElementById("Leftover_laser");
+        var sessionSlider = document.getElementById("sessionTime");
+        
+        SupportSlider.onchange = function(){
+            //console.log(inhaleSlider.value);
+            document.getElementById("Support_material_display").innerHTML = SupportSlider.value;
+        };
+
+        WasteSlider.onchange = function(){
+            document.getElementById("Waste_laser_display").innerHTML = WasteSlider.value;
+        };
+        
+        LeftoverSlider.onchange = function(){
+            document.getElementById("Leftover_laser_display").innerHTML = LeftoverSlider.value;
+        };
+
+        sessionSlider.onchange = function(){
+            document.getElementById("sessiondisplay").innerHTML = sessionSlider.value;
+        };
+
 
     // function material_calculation(){
     //     const weight_3dprint = parseFloat(document.getElementById("weight_3dprint_input").value)/1000;
