@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Environmental Impact Calculator for Digital Fabrication</h1>
-        <a><img src="images/header.JPG" alt="Header"class="home"></a>
+        <a><img src="images/header.JPG" alt="Header"class="home" height="600" width="600"></a>
         
     </header>
 
@@ -44,10 +44,10 @@
         <article id="3D_Printing" class="invisible">
             <nav>
                 <ul>
-                  <li><button id="manu">Manufacturing</button></li>
-                  <li><button id="trans">Transportation</button></li>
-                  <li><button id="use">Use</button></li>
-                  <li><button id="end">End</button></li>
+                  <li><button id="manu">Phase 1</button></li>
+                  <li><button id="trans">Phase 2</button></li>
+                  <li><button id="use">Phase 3</button></li>
+                  <li><button id="end">Phase 4</button></li>
                 </ul>
             </nav>
 
@@ -115,14 +115,14 @@
 
                 <p><label id="weight_3dprint_label" for="weight_3dprint">Weight of your model (gr) * <br/>
                 <p1>i.e. review this info in your 3d printing software such as Cura, Simplify 3D, etc.</p1></label></p>
-                <p><input type="text" id="weight_3dprint_input" class="input-field" placeholder="Type a number"required>(gr)</p>
+                <p><input type="text" id="weight_3dprint_input" class="input-field" placeholder="Type a number"required>&nbsp(gr)</p>
 
                 <p><label id="support_3dprint_label" for="support_3dprint">Support material (%) *</label></p>
-                <p><input type="text" id="support_3dprint_input" class="input-field" placeholder="Type a number" required>%</p>
+                <p><input type="text" id="support_3dprint_input" class="input-field" placeholder="Type a number" required>&nbsp%</p>
 
                 <p><label id="time_label">Printing time (min) * <br />
                 <p1> i.e. 14.5 instead of 14,5</p1></label></p>
-                <p><input  type="text" id="time" class="input-field" placeholder="Type a number" required>min</p>
+                <p><input  type="text" id="time" class="input-field" placeholder="Type a number" required>&nbspmin</p>
 
                 <p><label id="Iteration_label"># Iteration (ie.1,2,3,...) *</label></p>
                 <p><input type="text" id="Iteration" class="input-field" placeholder="Type a number"required></p>
@@ -148,10 +148,10 @@
         <article id="Laser_Cutting" class="invisible">
             <nav>
                 <ul>
-                    <li><button id="manu">Manufacturing</button></li>
-                    <li><button id="trans">Transportation</button></li>
-                    <li><button id="use">Use</button></li>
-                    <li><button id="end">End</button></li>
+                    <li><button id="manu">Phase 1</button></li>
+                    <li><button id="trans">Phase 2</button></li>
+                    <li><button id="use">Phase 3</button></li>
+                    <li><button id="end">Phase 4</button></li>
                 </ul>
             </nav>
 
@@ -169,7 +169,7 @@
             
                 
                 <p><label id="Iteration_label">What's your material thickness? *</label></p>
-                <p><input type="text" id="Iteration" class="input-field" placeholder="Type a number"required>mm</p>
+                <p><input type="text" id="Iteration" class="input-field" placeholder="Type a number"required>&nbspmm</p>
             </div>
 
             <div id="Transportation">
@@ -222,24 +222,24 @@
                
                 <p><label id="sheetsize" for="type_Laser">Type you sheet size (m2) *</label></p>
                 
-                <p>Length: <input type="text" id="Length_laser_input" class="input-field" style="width:60px;" placeholder="Number"required>m x Width: <input type="text" id="Length_laser_input" class="input-field" style="width:60px;" placeholder="Number"required>m</p>
+                <p>Length: <input type="text" id="Length_laser_input" class="input-field" style="width:60px;" placeholder="Number"required>&nbspm x Width: <input type="text" id="Length_laser_input" class="input-field" style="width:60px;" placeholder="Number"required>&nbspm</p>
                 
                 <p><label id="area" for="area_Laser">Area of material cut (m2) *</label></p>
             
-                <p><input type="text" id="area_laser_input" class="input-field" placeholder="Type a number"required>m2</p>
+                <p><input type="text" id="area_laser_input" class="input-field" placeholder="Type a number"required>&nbspm2</p>
 
                 
                 <p><label id="waste_laser_label" for="waste_laser">Waste (%) *</label></p>
                 
-                <p><input type="text" id="waste_laser_input" class="input-field" placeholder="Type a number" required>%</p>
+                <p><input type="text" id="waste_laser_input" class="input-field" placeholder="Type a number" required>&nbsp%</p>
 
                 <p><label id="Leftover_laser_label" for="Leftover_laser">Leftover (%) *</label></p>
                 
-                <p><input type="text" id="Leftover_laser_input" class="input-field" placeholder="Type a number" required>%</p>
+                <p><input type="text" id="Leftover_laser_input" class="input-field" placeholder="Type a number" required>&nbsp%</p>
 
                 <p><label id="time_label">Cutting time (min) * <br/>
                 <p1> i.e. 14.5 instead of 14,5</p1></label></p>
-                <p><input  type="text" id="time" class="input-field" placeholder="Type a number" required>min</p>
+                <p><input  type="text" id="time" class="input-field" placeholder="Type a number" required>&nbspmin</p>
 
                 <p><label id="Iteration_label"># Iteration (ie.1,2,3,...) *</label></p>
                 <p><input type="text" id="Iteration" class="input-field" placeholder="Type a number"required></p>

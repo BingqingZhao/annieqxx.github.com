@@ -135,3 +135,29 @@ nav ul li {
   }
   
   
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border: 1px solid #3b4456;
+    background: #e9eff8;
+    padding: 0 .5em;
+    line-height: 2;
+    width: 200px;
+  }
+
+  .input-field {
+    border: 1px solid #3b4456;
+    background: #e9eff8;
+    padding: 0 .5em;
+    line-height: 2;
+    border-radius: .25em;
+    width: 182px;
+  }
+ 
+  #firstname, #lastname {
+    background: #fefffe;
+    width: 182px;
+  }
